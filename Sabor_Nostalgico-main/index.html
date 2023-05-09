@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="Shortcut icon" href="assets/img/Receitas-da.ico">
+    <link rel="stylesheet" href="assets/CSS/home.css">
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function redirecionarPaginaAleatoria() {
+            // Array com URLs das páginas do seu site
+            var paginas = [
+                "Petit_Gateau.html",
+                "Bolo_Coco_Gelado.html",
+                "Rosca_Mandioca.html",
+                "Frango_Creme_Cebola.html",
+            ];
+
+            // Gera um número aleatório baseado no tamanho do array de páginas
+            var indiceAleatorio = Math.floor(Math.random() * paginas.length);
+
+            // Redireciona para a página aleatória
+            window.location.href = paginas[indiceAleatorio];
+        }
+    </script>
+
+    <title>Quitutes da Vovó</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+        
+        <div class="logo">
+            <h1><img src="assets/img/Receitas da.png" alt=""></h1>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+        <div class="menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <div class="father">
+        
+        <div class="vazio1">
+
+        </div>
+
+        <div class="vazio2">
+
+        </div>
+
+        <a href="Petit_Gateau.html" class="receita1">
+            <div>
+                <h4>Petit Gateau de chocolate e nozes</h4>
+                <img src="assets/img/Petit.png" alt="" class="petit">
+                <p>Petit gâteau é uma sobremesa composta de um pequeno bolo de chocolate com casca e recheio cremoso servido geralmente acompanhado de sorvete.</p>
+            </div>
+        </a>
+    
+        <a href="Frango_Creme_Cebola.html" class="receita2">
+            <div>
+                <h4>Sobre coxa de frango com creme de cebola</h4>
+                <img src="assets/img/Frango.png" alt="" class="frango">
+                <p>Frango com Maionese e creme de cebola, assado no forno</p>
+            </div>
+        </a>
+
+        <a href="Bolo_Coco_Gelado.html" class="receita3">
+            <div>
+                <h4>Bolo de coco cremoso gelado</h4>
+                <img src="assets/img/Bolo.png" alt="" class="bolo">
+                <p>O bolo gelado de coco simples molhadinho, que combina perfeitamente com coco ralado salpicado por cima. Essa delícia vai alimentar a sua memória afetiva, remetendo à infância, quando se servia esse bolo nas festinhas.</p>
+            </div>
+        </a>
+        
+        <a href="Rosca_Mandioca.html" class="receita4">
+            <div>
+                <h4>Rosca de Mandioca</h4>
+                <img src="assets/img/Rosca.png" alt="" class="rosca">
+                <p>Quer ter à mão um bom lanche para servir às suas visitas quando bater aquela vontade de encontrar os amigos e conversar? Então, use essa nossa receita de Rosca de Mandioca. Além de simples, é bastante baratinha de fazer.</p>
+            </div>
+        </a>
+        
+    </div>
+
+</body>
+
+<footer>
+
+    <p>&copy; 2023 Quitutes da Vovó</p>
+    <p>Telefone: (19) 3873-5592</p>
+    <p>Email: contato@QuitutesVovó.com</p>
+
+</footer>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="Shortcut icon" href="assets/img/Receitas-da.ico">
+    <link rel="stylesheet" href="assets/CSS/frango.css">
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function redirecionarPaginaAleatoria() {
+            // Array com URLs das páginas do seu site
+            var paginas = [
+                "Petit_Gateau.html",
+                "Bolo_Coco_Gelado.html",
+                "Rosca_Mandioca.html",
+                "Frango_Creme_Cebola.html",
+            ];
+
+            // Gera um número aleatório baseado no tamanho do array de páginas
+            var indiceAleatorio = Math.floor(Math.random() * paginas.length);
+
+            // Redireciona para a página aleatória
+            window.location.href = paginas[indiceAleatorio];
+        }
+    </script>
+
+    <title>Quitutes da Vovó</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+        
+        <div class="logo">
+            <h1><img src="assets/img/Receitas da.png" alt=""></h1>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+        <div class="menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+    
+    <div class="father">
+
+        <div class="text1">
+
+            <br>
+            <h1>Sobre coxa de frango com creme de cebola</h1>
+            <br>
+            <h4>Ingredientes:</h4>
+            <br>
+            <p>4 sobre coxas de frango (não precisa temperar).</p>
+            <p>1 envelope de creme de cebola</p>
+            <p>2 colheres de maionese</p>
+
+        </div>
+
+        <br>
+
+        <div class="text2">
+            <h4>Modo de Prepato:</h4>
+            <br>
+            <p>Misture o creme de cebola com a maionese e passe as coxas na mistura. Levar ao forno até dourar.</p>
+            <br>
+        </div>
+
+    </div>
+</body>
+
+<footer>
+
+    <p>&copy; 2023 Quitutes da Vovó</p>
+    <p>Telefone: (19) 3873-5592</p>
+    <p>Email: contato@QuitutesVovó.com</p>
+
+</footer>
+
+</html>

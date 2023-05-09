@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="Shortcut icon" href="assets/img/Receitas-da.ico">
+    <link rel="stylesheet" href="assets/CSS/petit.css">
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function redirecionarPaginaAleatoria() {
+            // Array com URLs das páginas do seu site
+            var paginas = [
+                "Petit_Gateau.html",
+                "Bolo_Coco_Gelado.html",
+                "Rosca_Mandioca.html",
+                "Frango_Creme_Cebola.html",
+            ];
+
+            // Gera um número aleatório baseado no tamanho do array de páginas
+            var indiceAleatorio = Math.floor(Math.random() * paginas.length);
+
+            // Redireciona para a página aleatória
+            window.location.href = paginas[indiceAleatorio];
+        }
+    </script>
+
+    <title>Quitutes da Vovó</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+        
+        <div class="logo">
+            <h1><img src="assets/img/Receitas da.png" alt=""></h1>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+        <div class="menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+
+        </ul>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <div class="father">
+
+        <div class="text1">
+
+            <br>
+            <h1>Petit Gateau de chocolate e nozes</h1>
+
+            <br>
+
+            <h4>Ingredientes:</h4>
+
+            <br>
+
+            <p>250 g de chocolate meio amargo</p>
+            <p>150 g de manteiga s/sal</p>
+            <p>04 ovos</p>
+            <p>100 g de açucar</p>
+            <p>150 g de farinha de trigo refinado</p>
+            <p>150 g de nozes picados</p>
+
+        </div>
+
+        <br>
+
+        <div class="text2">
+            <h4>Modo de preparo:</h4>
+
+            <br>
+
+            <p>
+                Colocar o chocolate em banho maria para perreter, em seguida mistura a manteiga. Misturar bem.
+                Tirar do banho maria e guardar. Na batedeira, misturar os ovos com o açucar, até ficar cremoso e claro.
+                Em seguida misturar a farinha e por ultimo, o chocolate com a manteiga. 
+                Misture bem. Untar as forminhas de Petit Gateau com manteiga e farinha, 
+                colocar a massa pela metade da forma e colocar no forno por 30 min. Não deixar assar muito. 
+                Por dentro ele tem de estar bem molinho.
+            </p>
+            <p>Servir com sorvete de creme</p>
+            <br>
+        </div>
+
+    </div> 
+</body>
+
+<footer>
+
+    <p>&copy; 2023 Quitutes da Vovó</p>
+    <p>Telefone: (19) 3873-5592</p>
+    <p>Email: contato@QuitutesVovó.com</p>
+
+</footer>
+
+</html>

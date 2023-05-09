@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="Shortcut icon" href="assets/img/Receitas-da.ico">
+    <link rel="stylesheet" href="assets/CSS/rosca.css">
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function redirecionarPaginaAleatoria() {
+            // Array com URLs das páginas do seu site
+            var paginas = [
+                "Petit_Gateau.html",
+                "Bolo_Coco_Gelado.html",
+                "Rosca_Mandioca.html",
+                "Frango_Creme_Cebola.html",
+            ];
+
+            // Gera um número aleatório baseado no tamanho do array de páginas
+            var indiceAleatorio = Math.floor(Math.random() * paginas.length);
+
+            // Redireciona para a página aleatória
+            window.location.href = paginas[indiceAleatorio];
+        }
+    </script>
+
+    <title>Quitutes da Vovó</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+        
+        <div class="logo">
+            <h1><img src="assets/img/Receitas da.png" alt=""></h1>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+        <div class="menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" onclick="redirecionarPaginaAleatoria();" class="nav-link">Receitas</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button><a href="entrar.html">Entrar</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+    <div class="father">
+
+        <div class="text1">
+
+            <br>
+            <h1>Rosca de Mandioca</h1>
+            <br>
+            <h4>Ingredientes:</h4>
+            <br>
+            <p>1 Prato fundo de mandioca cozida e espremida</p>
+            <p>3 Ovos</p>
+            <p>50 g fermento p/ pão</p>
+            <p>1½ copo de leite</p>
+            <p>±1 Xícara de açucar</p>
+            <p>3 CS manteiga</p>
+            <p>Trigo</p>
+
+        </div>
+
+        <br>
+
+        <div class="text2">
+
+            <h4>Modo de Preparo:</h4>
+            <br>
+            <p>
+                Misture todos os ingredientes adicione o trigo aos poucos até dar ponto de pão 
+                e deixe crescer até duplicar de tamanho. Divida a massa em partes iguais 
+                (divida em uma quantidade par). Faça rolinhos com as partes da massa, pegue 2 partes 
+                da massa e trance-as, faça com todos os pedaços, deixe-as crescerem novamente até dobrar 
+                de tamanho e asse-as até ficar cozidas.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+
+    <p>&copy; 2023 Quitutes da Vovó</p>
+    <p>Telefone: (19) 3873-5592</p>
+    <p>Email: contato@QuitutesVovó.com</p>
+
+</footer>
+
+</html>
